@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+background-image: url(pexels-eberhard-grossgasteiger-1624496.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+
+}
+.todo-app{
+    border: 3px solid burlywood;
+    height: 790px;
+    width: 550px;
+    margin: 100px auto 15px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+
+}
+.todo-app h2{
+    color:grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 55px;
+    
+}
+.row{
+border: 2px solid green;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background:black;
+border-radius:30px;
+padding-left:4px;
+margin-bottom:30px
+}
+input{
+    flex: 1;
+   border: none;
+    outline: none;
+    background:transparent;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+}
+button{
+border: none;
+    outline: none;
+    padding: 2px 20px;
+    background: black;
+    color:wheat;
+    font-size: 22px;
+    font-style: bold;
+    cursor: pointer;
+    border-radius: 50px;
+}
+ul li{
+    list-style: none;
+    font-size: 40px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color:burlywood;
+    text-decoration: line-through;
+}
+
+ul li.checked{
+    color:black;
+text-decoration: line-through;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 52px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background:black;
+    
+}
+button:hover{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+}
